@@ -3,10 +3,18 @@ import PropTypes from 'prop-types'
 import Event from '../partial/Event'
 
 class Homepage extends React.Component {
-  render () {
+  renderEvents() {
+    const events =  this.props.events.map((event, index) => {
+      return <Event key={'event' + index} event={event} />
+    });
+
+    return events;
+  }
+
+  render() {
     return (
       <div className="">
-        <Event />
+        {this.renderEvents()}
       </div>
     );
   }

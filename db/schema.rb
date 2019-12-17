@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2019_12_13_043946) do
     t.string "image_url"
     t.string "date"
     t.string "time"
-    t.string "type"
+    t.string "event_type"
     t.string "ticket_price"
     t.string "total_tickets"
     t.datetime "created_at", null: false

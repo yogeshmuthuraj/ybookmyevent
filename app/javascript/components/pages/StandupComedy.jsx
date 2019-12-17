@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Event from '../partial/Event'
 
 class StandupComedy extends React.Component {
-  render () {
+  render() {
     return (
       <div className="standupcomedy">
         <Event />

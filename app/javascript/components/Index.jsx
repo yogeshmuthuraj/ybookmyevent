@@ -14,7 +14,8 @@ class Index extends React.Component {
     super(props);
 
     this.state = {
-      currentTab: 'musicshows'
+      currentTab: 'home',
+      events: this.props.events,
     }
 
     Object.getOwnPropertyNames(Index.prototype).forEach((method) => {
@@ -28,12 +29,12 @@ class Index extends React.Component {
     });
   }
 
-  render () {
+  render() {
     let tab = '';
 
     switch(this.state.currentTab) {
       case 'home':
-        tab = <Homepage />
+        tab = <Homepage events={this.state.events} />
         break;
       case 'danceprograms':
         tab = <DancePrograms />
@@ -50,8 +51,6 @@ class Index extends React.Component {
       default:
         // code block
     }
-
-    console.log(tab);
 
     return (
       <div className="pad-all-50" >

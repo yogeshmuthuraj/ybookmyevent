@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 class Footer extends React.Component {
-  render () {
+  render() {
     return (
       <div className="footer">
         {'COPYRIGHT 2019'}
