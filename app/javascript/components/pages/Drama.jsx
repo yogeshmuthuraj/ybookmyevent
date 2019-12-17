@@ -3,10 +3,22 @@ import PropTypes from 'prop-types'
 import Event from '../partial/Event'
 
 class Drama extends React.Component {
+  renderEvents() {
+    let events;
+
+    events = this.props.events.map((event, index) => {
+      if (event.event_type == 'drama') {
+        return <Event key={'event' + index} event={event} />
+      }
+    });
+
+    return events;
+  }
+
   render() {
     return (
-      <div className="drama">
-        <Event />
+      <div className="">
+        {this.renderEvents()}
       </div>
     );
   }

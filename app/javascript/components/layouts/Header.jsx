@@ -51,13 +51,13 @@ class Header extends React.Component {
                 <label htmlFor="description">description:</label>
                 <input type="text" className="form-control" id="description" />
                 <label htmlFor="image_url">image_url:</label>
-                <input type="text" className="form-control" id="image_url" placeholder="https://picsum.photos/200/200" />
+                <input type="text" className="form-control" id="image_url" placeholder="https://picsum.photos/200/200" defaultValue="https://picsum.photos/200/200" />
                 <label htmlFor="date">date:</label>
                 <input type="text" className="form-control" id="date" />
                 <label htmlFor="time">time:</label>
                 <input type="text" className="form-control" id="time" />
                 <label htmlFor="event_type">event_type:</label>
-                <input type="text" className="form-control" id="event_type" placeholder="music/drama/standupcomedy/danceprograms" />
+                <input type="text" className="form-control" id="event_type" placeholder="musicshows/drama/standupcomedy/danceprograms" />
                 <label htmlFor="ticket_price">ticket_price:</label>
                 <input type="text" className="form-control" id="ticket_price"
                     placeholder="120" />
@@ -79,7 +79,7 @@ class Header extends React.Component {
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
-            <a className="navbar-brand" href="#">WebSiteName</a>
+            <a className="navbar-brand" onClick={() => this.props.changeTab('home')}>WebSiteName</a>
           </div>
           <ul className="nav navbar-nav">
             <li className={currentTab == 'musicshows' ? 'active' : ''}>

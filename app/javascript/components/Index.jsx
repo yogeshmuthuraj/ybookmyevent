@@ -37,16 +37,16 @@ class Index extends React.Component {
         tab = <Homepage events={this.state.events} />
         break;
       case 'danceprograms':
-        tab = <DancePrograms />
+        tab = <DancePrograms events={this.state.events} />
         break;
       case 'drama':
-        tab = <Drama />
+        tab = <Drama events={this.state.events} />
         break;
       case 'musicshows':
-        tab = <MusicShows />
+        tab = <MusicShows events={this.state.events} />
         break;
       case 'standupcomedy':
-        tab = <StandupComedy />
+        tab = <StandupComedy events={this.state.events} />
         break;
       default:
         // code block

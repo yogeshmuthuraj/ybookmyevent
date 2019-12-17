@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_12_13_043946) do
   create_table "events", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.string "image_url"
+    t.string "image_url", default: "https://picsum.photos/200"
     t.string "date"
     t.string "time"
     t.string "event_type"

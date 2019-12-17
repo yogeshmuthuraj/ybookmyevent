@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 class Event extends React.Component {
   render() {
+    const event = this.props.event;
     const bookEventBtn = <button type="button" className="btn btn-primary btn-block">Book Tickets</button>
 
     return (
