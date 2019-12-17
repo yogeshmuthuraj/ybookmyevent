@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  description: 
+  image_url: 
+  date: 
+  time: 
+  type: 
+  ticket_price: 
+  total_tickets: MyString
+
+two:
+  name: 
+  description: 
+  image_url: 
+  date: 
+  time: 
+  type: 
+  ticket_price: 
+  total_tickets: MyString

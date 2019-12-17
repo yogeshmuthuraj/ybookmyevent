@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 
+  amount: 
+  mode: 
+  user_id: 
+  event_id: 
+  seats: 1
+
+two:
+  status: 
+  amount: 
+  mode: 
+  user_id: 
+  event_id: 
+  seats: 1

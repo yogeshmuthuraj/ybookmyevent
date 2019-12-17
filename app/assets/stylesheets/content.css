@@ -1,0 +1,20 @@
+.event {
+  width: 250px;
+  height: 400px;
+  border: 1px solid #ccc!important;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.event-status {
+  position: relative;
+  padding-top: 10px !important;
+}
+
+.event-image {
+  text-align: center;
+}
+
+.add-even-btn {
+  margin-top: 8px;
+}

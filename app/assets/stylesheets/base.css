@@ -1,0 +1,25 @@
+.back-color-grey {
+  background-color: lightgrey !important;
+}
+
+.pad-all-50 {
+  padding: 50px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: papayawhip;
+  color: grey;
+  text-align: center;
+}
+
+.back-color-white {
+  background-color: white !important;
+}
+
+.height-100-percent {
+  height: 100% !important;
+}
