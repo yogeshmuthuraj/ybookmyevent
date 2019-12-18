@@ -32,7 +32,7 @@ class Event extends React.Component {
                     <div>{event.date}</div>
                     <div>{event.time}</div>
                     <div>ticket_price: Rs.{event.ticket_price}/-</div>
-                    <div>Number of persons:
+                    <div>Number of persons:</div>
                   </div>
                 </div>
               </div>
