@@ -4,4 +4,7 @@ Rails.application.routes.draw do
 
   resources :events, only: [:index, :new, :create, :show, :update, :edit, :destroy] do
   end
+
+  resources :payments, only: [:index, :new, :create, :show, :update, :edit, :destroy] do
+  end
 end
