@@ -36,11 +36,12 @@ class Event extends React.Component {
   }
 
   printTicket() {
+    const event = this.props.event;
     const data = {
       status: 'PAID',
-      amount: event.ticket_price * this.state.numberOfPersons,
+      amount: (Number(event.ticket_price) * Number(this.state.numberOfPersons)),
       mode: 'UPI',
-      event_id: this.props.event.id,
+      event_id: event.id,
       seats: this.state.numberOfPersons
     }
 
