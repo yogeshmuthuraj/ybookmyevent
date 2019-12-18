@@ -79,20 +79,20 @@ class Header extends React.Component {
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
-            <a className="navbar-brand" onClick={() => this.props.changeTab('home')}>WebSiteName</a>
+            <a className="navbar-brand" onClick={() => this.props.changeTab('home')}>BookMyEvent</a>
           </div>
           <ul className="nav navbar-nav">
             <li className={currentTab == 'musicshows' ? 'active' : ''}>
-              <a onClick={() => this.props.changeTab('musicshows')}>MS</a>
+              <a onClick={() => this.props.changeTab('musicshows')}>Music Shows</a>
             </li>
             <li className={currentTab == 'drama' ? 'active' : ''}>
-              <a onClick={() => this.props.changeTab('drama')}>DR</a>
+              <a onClick={() => this.props.changeTab('drama')}>Drama</a>
             </li>
             <li className={currentTab == 'standupcomedy' ? 'active' : ''}>
-              <a onClick={() => this.props.changeTab('standupcomedy')}>SU</a>
+              <a onClick={() => this.props.changeTab('standupcomedy')}>Standup Comedies</a>
             </li>
             <li className={currentTab == 'danceprograms' ? 'active' : ''}>
-              <a onClick={() => this.props.changeTab('danceprograms')}>DP</a>
+              <a onClick={() => this.props.changeTab('danceprograms')}>Dance Programs</a>
             </li>
           </ul>
           <div className="pull-right">
